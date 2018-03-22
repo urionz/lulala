@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<style type="text/css">
+    body{
+        font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    }
+    .error{
+        position: absolute;
+        width: 844px;
+        height: 524px;
+        /*height: 407px;*/
+        top: 10rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .error .error_gif{
+        position: relative;
+    }
+    .error .error_notice{
+        font-size: 0.2rem;
+        font-weight: 700;
+    }
+    .error .error_notice .normal{
+        color: #353637;
+    }
+    .error .error_notice .gohoem{
+        color: #00a1d8;
+    }
+    a{
+        color: #00a1d8;
+    }
+
+</style>
+<body>
+<div id="error_area" class="error">
+    <div  id="img_id" class="error_gif">
+        <img src="{{ asset('assets/images/error_img.png') }}">
+    </div>
+    <div class="error_notice">
+        <p>
+            <span class="normal">老司机似乎迷了路啊，</span>
+            <span class="gohome"><a href="{{ env('APP_URL') }}">GO HOME</a></span>
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+    var docClientWidth = 375;
+    docClientWidth = document.documentElement.clientWidth ;
+    if(docClientWidth>620)docClientWidth = 620;
+
+    var designWidth = 320;//310 + 10个像素的右边位置
+
+    var perDesgin = designWidth/100;
+    var scaleRate =  (docClientWidth / perDesgin);
+    scaleRate = parseInt(scaleRate);
+
+    var docClientHeight = 667;
+    docClientHeight = document.documentElement.clientHeight ;
+
+
+    document.documentElement.style.fontSize =  scaleRate + 'px';
+
+    window.onload=function(){
+        var imgObj = document.getElementById("img_id");
+        var imgHeight = imgObj.offsetHeight;
+        var offHeight = (docClientHeight - imgHeight)/2 - 100;
+        if(offHeight<=100)offHeight=100;
+
+        var obj = document.getElementById("error_area");
+        obj.style.top = offHeight+"px";
+    }
+
+    function px2rem( px){
+        return px / 100;
+    }
+
+    function rem2px(rem){
+        return (rem * scaleRate);
+    }
+
+</script>
+</body>
+</html>

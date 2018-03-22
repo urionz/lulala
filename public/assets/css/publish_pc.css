@@ -1,0 +1,263 @@
+body {
+  max-height: 905px;
+}
+.grid1 {
+  background: none;
+}
+.grid-stack-item-content {
+  text-align: center;
+  padding: 2.5px;
+}
+.grid-stack-item-content .w_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.grid-stack-item-content .w_item .bgDiv {
+  background-color: #f3f5f7;
+  width: 100%;
+  height: 100%;
+}
+.grid-stack-item-content .w_item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.row {
+  background-color: #f3f5f7;
+}
+.fluid_bg {
+  position: absolute;
+  text-align: center;
+  top: -1px;
+}
+.fluid_bg img {
+  width: 100%;
+  height: 100%;
+}
+.w_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.header {
+  position: relative;
+  height: 45px;
+  background-color: #0d141e;
+  z-index: 10;
+}
+.header .left_icon {
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  margin: auto 0;
+  position: absolute;
+}
+.main_bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 45px;
+  background: url("../images/publish/publish_bg.jpg") no-repeat center top;
+  background-size: cover;
+}
+.publish_area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 550px;
+}
+.publish_area .mobile_area {
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+}
+.publish_area .mobile_area .mobile_bg {
+  position: absolute;
+  width: 270px;
+  height: 593px;
+  background: url("../images/publish/bg_phone.png") no-repeat center top;
+}
+.publish_area .mobile_area .mobile_title {
+  position: absolute;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  top: 79px;
+  color: white;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.publish_area .mobile_area .content {
+  position: absolute;
+  left: 20px;
+  top: 107px;
+  background-color: #e7ebee;
+}
+.publish_area .right_area {
+  position: absolute;
+  width: 412px;
+  left: 354px;
+}
+.publish_area .right_area .qr_area {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 210px;
+  height: 260px;
+  text-align: center;
+}
+.publish_area .right_area .qr_area .qr_code {
+  width: 210px;
+  height: 210px;
+  background-color: white;
+}
+.publish_area .right_area .qr_area p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+.publish_area .share_area {
+  position: absolute;
+  top: 396px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 420px;
+  height: 40px;
+  text-align: center;
+}
+.publish_area .share_area p {
+  display: inline;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+.publish_area .share_area img {
+  margin-left: 10px;
+}
+.publish_area .share_area .weixin {
+  display: inline;
+}
+.publish_area .share_area .weixin .pop_qr {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 220px;
+  background-color: none;
+  z-index: 10;
+  top: -203px;
+  left: 71px;
+}
+.publish_area .share_area .weixin .pop_qr .pop_area {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.publish_area .share_area .weixin:hover .pop_qr {
+  display: block;
+}
+.publish_area .share_input {
+  position: absolute;
+  top: 449px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 420px;
+  height: 35px;
+  text-align: left;
+}
+.publish_area .share_input .text_show {
+  display: inline-block;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: black;
+  width: 340px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.publish_area .share_input .copy_btn {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #00a1d8;
+  color: white;
+}
+.div_scroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scroll_container {
+  position: relative;
+  width: 100%;
+}
+.scroll_absolute {
+  width: 100%;
+  position: absolute;
+}
+.scroll_vertical_bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: rgba(1, 1, 1, 0);
+  margin: 0;
+  padding: 0;
+}
+.scroll_track {
+  position: relative;
+  background-color: rgba(1, 1, 1, 0);
+}
+.scroll_drag {
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: #40576f;
+}
+.scroll_arrow {
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  background-color: #369DB4;
+}
+.scroll_vertical_bar .scroll_arrow {
+  height: 16px;
+}
+.right_icons {
+  right: 200px;
+}
+.lulala_logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.lulala_logo img {
+  width: 75px;
+  height: 18px;
+}

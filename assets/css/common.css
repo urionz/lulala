@@ -1,0 +1,50 @@
+body {
+  font: normal 12px/1.6em Microsoft YaHei, Tahoma, simsun;
+  color: #929394;
+}
+input {
+  outline: none;
+}
+p {
+  margin: 0;
+}
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.cl {
+  clear: both;
+}
+.autoWidth {
+  width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+}
+#footer {
+  clear: both;
+  height: 65px;
+  padding-top: 10px;
+  line-height: 22px;
+  text-align: center;
+  min-width: 1280px;
+  color: #fff;
+  background: #0b101e;
+}
+#footer a {
+  color: #fff;
+}

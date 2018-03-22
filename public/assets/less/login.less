@@ -1,0 +1,292 @@
+body {
+    font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    color: #929394;
+    margin: 0;
+    padding: 0;
+}
+
+.bg_effect{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    background-color: green;
+}
+.login_area{
+    position: absolute;
+    // display: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 360px;
+    height: 375px;    
+    // border: solid red 2px;
+    font-size: 12px;
+    .login_top{
+      position: relative;
+      height: 340px;
+      padding: 0 30px;
+      color: #5f5f5f;
+      background-color: white;
+      .logo{
+        width: 100%;
+        height: 80px;
+        position: relative;
+        img{
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+      }
+      .wrong_notice{
+        position: absolute;
+        top: 60px;
+        color: red;        
+      }
+      .user_name{        
+        p{
+          height:  12px;
+          line-height: 12px;
+        }
+        .input_class{
+          height: 34px;
+          width: 100%;
+        }      
+      }
+      .password{
+         margin-top: 12px;       
+        p{
+          height:  12px;
+          line-height: 12px;
+        }
+        .input_class{
+          height: 34px;
+          width: 100%;
+        }      
+      }
+      .notice{
+        margin-top: 17px;
+        position: relative;
+        height: 24px;
+        width: 100%;
+        .auto_login{
+          position: absolute;
+          left: 0;
+          width: 120px;
+        }
+        .forget_password{
+          position: absolute;
+          right: 0;        
+          color: #00a1d8;
+          cursor: pointer;
+        }        
+      }
+      .login_btn{
+          margin-top: 12px;
+          height: 34px;
+          text-align: center;
+          background-color: #00a1d8;
+          line-height: 34px;
+          color: white;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+      }
+    }
+    .login_bottom{
+      position: absolute;
+      height: 35px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+      font-size: 12px;
+      bottom: 0;      
+      p{
+        line-height: 15px;
+      }
+      .about_us{      
+        position: absolute;
+        left: 15px;       
+        cursor: pointer;
+      }
+      .quick_register{
+        position: absolute;
+        right: 15px;    
+        cursor: pointer;  
+      }
+    }
+}
+.register_area{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 360px;
+    height: 470px;    
+    // border: solid red 2px;
+    font-size: 12px;
+    .register_top{
+      position: relative;
+      height: 470px;
+      padding: 0 30px;
+      color: #5f5f5f;
+      background-color: white;
+      .logo{
+        width: 100%;
+        height: 80px;
+        position: relative;
+        img{
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+      }
+      .wrong_notice{
+        position: absolute;
+        top: 60px;
+        color: red;        
+      }
+      .user_name{        
+        p{
+          height:  12px;
+          line-height: 12px;
+        }
+        .input_class{
+          height: 34px;
+          width: 100%;
+        }      
+      }
+      .password{
+         margin-top: 12px;       
+        p{
+          height:  12px;
+          line-height: 12px;
+        }
+        .input_class{
+          height: 34px;
+          width: 100%;
+        }      
+      }
+      .notice{
+        margin-top: 17px;
+        position: relative;
+        height: 24px;
+        width: 100%;
+        .auto_login{
+          position: absolute;
+          left: 0;
+          width: 120px;
+        }
+        .forget_password{
+          position: absolute;
+          right: 0;        
+          color: #00a1d8;
+          cursor: pointer;
+        }        
+      }
+      .register_btn{
+          margin-top: 33px;
+          height: 34px;
+          text-align: center;
+          background-color: #00a1d8;
+          line-height: 34px;
+          color: white;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+      }
+    }
+
+}
+
+input {border: solid 1px #f0f0f0;};     
+input {background-color: white;};
+input {color:#5f5f5f;}  
+button{border: none;};    
+
+.checkboxStyle {
+  width: 25px;
+  position: relative;
+}
+
+.checkboxStyle label {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: #00a1d8;
+  border-radius: 5px;
+  // border:1px solid #ddd;
+}
+.checkboxStyle label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 4px;
+  left: 5px;
+  border: 3px solid white;
+  border-top: none;
+  border-right: none;
+ 
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkboxStyle label:hover::after {
+  opacity: 0;
+}
+ 
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxStyle input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.vignette {
+  background-image: -webkit-radial-gradient(50% 50%, ellipse, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+  background-image: radial-gradient(50% 50%, ellipse, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%);
+}
+
+.noise {
+  background-image: url("../graphics/noise.png");
+  opacity: 0.075;
+}
+
+.hide {
+  opacity: 0;
+}
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  canvas{
+    width: 100%;
+    height: 100%;
+  }
+}

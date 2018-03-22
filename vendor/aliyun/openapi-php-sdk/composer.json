@@ -1,0 +1,20 @@
+{
+    "name": "aliyun/openapi-php-sdk",
+    "type": "library",
+    "homepage": "https://github.com/wenqinruan/aliyun-openapi-php-sdk",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { 
+            "Aliyun\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ruanwenqin",
+            "email": "452253895@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    }
+}

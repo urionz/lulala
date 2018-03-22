@@ -1,0 +1,29 @@
+ {
+    "name": "aobozhang/aliyun-oss-adapter",
+    "type": "library",
+    "description": "Use Aliyun oss as Storage for Laravel 5.0+",
+    "keywords": ["aliyun", "oss", "laravel", "storage"],
+    "homepage": "https://github.com/aobozhang",
+    "license": "MIT",
+    "require": {
+      "php": ">=5.4.0",
+      "league/flysystem": "~1.0",
+      "aliyuncs/oss-sdk-php": "~2.0.4"
+    },
+    "authors": [
+        {
+            "name": "Aobo",
+            "email": "aobozhang@gmail.com",
+            "homepage": "https://github.com/aobozhang",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Aobo\\OSS\\": "src/"
+      }
+    },
+    "suggest": {
+        "laravel/framework": "5.2.*"
+    }
+}

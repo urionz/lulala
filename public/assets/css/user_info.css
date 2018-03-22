@@ -1,0 +1,134 @@
+body{
+    font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    color: #929394;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    border: solid 1px #e6e6e6;
+  }
+  input {
+    background-color: white;
+  }
+  input {
+    color: #000000;
+  }
+  button {
+    border: none;
+  }
+
+  .content{
+    width: 100%;
+    padding: 80px 5px 10px 80px;        
+  }   
+  .content .content_item {
+    height: 70px;
+    font-size: 14px;
+    position: relative;
+    padding-left: 0;
+  }
+  .content .content_item .cell_2 {
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  .content .content_item .cell_3 {
+    margin-left: 20px;
+    position: relative;
+    height: 70px;
+    width: 84px;
+  }
+  .content .content_item .cell_3 .change_avator {
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 84px;
+    text-align: center;
+    color: #00a1d8;
+    border-radius: 5px;
+    border: solid 1px #00a1d8;
+    cursor: pointer;
+  }
+  .content .content_item .cell_3 .change_avator p {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+  }
+  .content .content_item .cell_4 {
+    margin-left: 20px;
+  }
+  .content .content_item li {
+    list-style: none;
+    float: left;
+    height: 70px;
+    vertical-align: middle;
+  }
+  .content .content_item li p {
+    margin: 0;
+    line-height: 70px;
+    height: 70px;
+    display: inline-block;
+  }
+  .content .content_item li img {
+    height: 70px;
+    display: inline-block;
+  }
+  .content .user_web {
+    margin-top: 20px;
+  }
+  .content .user_web .cell_1 {
+    margin-left: 38px;
+  }
+  .content .user_web .cell_2 {
+    margin-left: 20px;
+  }
+  .content .user_web p {
+    display: inline-block;
+  }
+  .content .account {
+    margin-top: 10px;
+  }
+  .content .account .nick {
+    margin-top: 20px;
+  }
+  .content .account input {
+    width: 200px;
+    height: 30px;
+    margin-left: 42px;
+  }
+  .content .address {
+    margin-top: 20px;
+    color: #9a9a9a;
+  }
+  .content .address .address_span {
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+  }
+  .content .address #distpicker2 {
+    margin-left: 90px;
+  }
+  .content .address #distpicker2 select {
+    margin-left: 40px;
+  }
+  .content .address #distpicker2 select:first-child {
+    margin-left: 0;
+  }
+  .content .save {
+    margin-top: 30px;
+    margin-left: 93px;
+  }
+  .content .save .save_btn {
+    width: 100px;
+    height: 28px;
+    color: white;
+    background-color: #00a1d8;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
